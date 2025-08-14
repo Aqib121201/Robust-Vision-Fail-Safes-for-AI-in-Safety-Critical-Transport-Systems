@@ -71,7 +71,7 @@ Robust Vision Fail-Safes/
 
 ### Installation
 ```bash
-git clone https://github.com/your-username/robust-vision-failsafes.git
+git clone https://github.com/Aqib121201/robust-vision-failsafes.git
 cd robust-vision-failsafes
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
