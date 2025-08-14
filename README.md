@@ -1,18 +1,18 @@
 # Robust Vision Fail-Safes for AI in Safety-Critical Transport Systems
 
-## 🧠 Abstract
+##  Abstract
 
 A comprehensive safety-critical vision system for autonomous transport applications, featuring CNN-based vehicle classification with integrated fail-safe mechanisms, adversarial testing, and SHAP-based explainability. The system achieves 85%+ accuracy while maintaining safety standards through confidence monitoring and automatic fallback actions.
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Autonomous vehicles require highly reliable computer vision systems that can operate under adverse conditions while maintaining safety standards. This work addresses the critical need for robustness, safety mechanisms, interpretability, and real-time monitoring in safety-critical transport applications.
 
-## 📊 Dataset Description
+##  Dataset Description
 
 **CIFAR-10 Dataset**: 60,000 32×32 color images across 10 classes, focusing on vehicle-related classes (automobile, truck, airplane, ship) as safety-critical categories. Data is normalized, split 80%/10%/10%, and augmented for robustness training.
 
-## 🧪 Methodology
+##  Methodology
 
 ### Model Architecture
 Custom CNN with 4 convolutional layers, batch normalization, dropout (0.5), and dense layers. Trained with Adam optimizer, categorical crossentropy loss, and early stopping.
@@ -34,7 +34,7 @@ Multi-level safety framework:
 ### Explainability
 SHAP-based interpretability for global and local explanations, failure analysis, and safety validation.
 
-## 📈 Results
+##  Results
 
 | Metric | Clean Data | Gaussian Noise (σ=0.2) | Occlusion (30%) |
 |--------|------------|------------------------|-----------------|
@@ -45,10 +45,10 @@ SHAP-based interpretability for global and local explanations, failure analysis,
 
 **Fail-Safe Effectiveness**: 3.2% false positive rate, 1.8% false negative rate, 0.15s average response time.
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
-📦 Robust Vision Fail-Safes/
+Robust Vision Fail-Safes/
 ├── 📁 data/                   # Raw & processed datasets
 ├── 📁 notebooks/             # Jupyter notebooks
 ├── 📁 src/                   # Core source code
@@ -67,7 +67,7 @@ SHAP-based interpretability for global and local explanations, failure analysis,
 └── run_pipeline.py           # Main script
 ```
 
-## 💻 How to Run
+##  How to Run
 
 ### Installation
 ```bash
@@ -97,30 +97,26 @@ cd app
 streamlit run app.py
 ```
 
-## 🧪 Unit Tests
+##  Unit Tests
 ```bash
 pytest tests/ --cov=src --cov-report=html
 ```
 
-## 📚 References
+##  References
 
 1. Goodfellow, I. J., et al. (2014). Explaining and harnessing adversarial examples.
 2. Amodei, D., et al. (2016). Concrete problems in AI safety.
 3. Lundberg, S. M., & Lee, S. I. (2017). A unified approach to interpreting model predictions.
 4. Krizhevsky, A. (2009). Learning multiple layers of features from tiny images.
 
-## ⚠️ Limitations
+## Limitations
 
 - Limited to CIFAR-10 classes; real-world vehicle diversity not fully captured
 - 32×32 resolution may miss fine-grained details
 - Testing in controlled conditions; real-world validation needed
 - SHAP analysis adds computational overhead for real-time applications
 
-## 📄 PDF Report
-
-[📄 Download Full Academic Report](./report/Thesis_SafetyCriticalVision.pdf)
-
-## 🧠 Contribution & Acknowledgements
+##  Contribution & Acknowledgements
 
 **Team**: Lead Researcher, ML Engineer, Safety Engineer, Data Scientist
 
